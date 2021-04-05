@@ -1,0 +1,268 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b5b0d04b9e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="head_box center">
+        <div class="head_content">
+          <div class="left_cont">
+            <div class="logo">
+              <a href="index.html"><i class="fab fa-pagelines"></i></a>
+            </div>
+            <div class="bars">
+              <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+            <nav class="bars_navigation hide_nav">
+              <ul class="menu_list">
+                <a href="index.html"><li class="list_cat">About Us</li></a>
+                <a href="catalog.html"><li class="list_cat">Gallery</li></a>
+                <a href="#"><li class="list_cat">Contact</li></a>
+                <a href="cart.html"><li class="list_cat">Cart</li></a>
+              </ul>
+            </nav>
+
+            <script>
+              "use strict";
+
+              document
+                .querySelector(".bars")
+                .addEventListener("click", (event) => {
+                  document
+                    .querySelector(".bars_navigation")
+                    .classList.toggle("hide_nav");
+                });
+            </script>
+          </div>
+
+          <div class="right_cont">
+            <div class="cart">
+              <a href="cart.html"><i class="fas fa-cart-arrow-down"></i></a>
+            </div>
+            <div class="acc">
+              <a href="#"><i class="fas fa-user-circle"></i></a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="catalog_box center full_height">
+        <h2 class="catalog_header">Our best deals</h2>
+        <section class="catalog_cards">
+          <!-- <div class="card">
+            <a href="#"
+              ><img class="product_image" src="images/gallery.jpeg" alt="photo"
+            /></a>
+            <a href="#"><p class="product_name">Lorem, ipsum dolor</p></a>
+            <p class="product_description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+              fuga voluptas totam dolorum, sequi deserunt repellat quia.
+            </p>
+
+            <div class="product_price">
+              <p>Price:</p>
+              <p class="cost">333</p>
+            </div>
+
+            <div class="product_cart">
+              <input
+                class="products_quantity"
+                type="number"
+                size="2"
+                name="num"
+                min="1"
+                max="10"
+                value="1"
+              />
+              <button class="cart_button">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#"
+              ><img class="product_image" src="images/gallery2.jpg" alt="photo"
+            /></a>
+            <a href="#"><p class="product_name">Lorem, ipsum dolor</p></a>
+            <p class="product_description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+              fuga voluptas totam dolorum, sequi deserunt repellat quia.
+            </p>
+
+            <div class="product_price">
+              <p>Price:</p>
+              <p class="cost">333</p>
+            </div>
+
+            <div class="product_cart">
+              <input
+                class="products_quantity"
+                type="number"
+                size="2"
+                name="num"
+                min="1"
+                max="10"
+                value="1"
+              />
+              <button class="cart_button">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#"
+              ><img class="product_image" src="images/gallery.jpeg" alt="photo"
+            /></a>
+            <a href="#"><p class="product_name">Lorem, ipsum dolor</p></a>
+            <p class="product_description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+              fuga voluptas totam dolorum, sequi deserunt repellat quia.
+            </p>
+
+            <div class="product_price">
+              <p>Price:</p>
+              <p class="cost">333</p>
+            </div>
+
+            <div class="product_cart">
+              <input
+                class="products_quantity"
+                type="number"
+                size="2"
+                name="num"
+                min="1"
+                max="10"
+                value="1"
+              />
+              <button class="cart_button">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#"
+              ><img class="product_image" src="images/gallery2.jpg" alt="photo"
+            /></a>
+            <a href="#"><p class="product_name">Lorem, ipsum dolor</p></a>
+            <p class="product_description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+              fuga voluptas totam dolorum, sequi deserunt repellat quia.
+            </p>
+
+            <div class="product_price">
+              <p>Price:</p>
+              <p class="cost">333</p>
+            </div>
+
+            <div class="product_cart">
+              <input
+                class="products_quantity"
+                type="number"
+                size="2"
+                name="num"
+                min="1"
+                max="10"
+                value="1"
+              />
+              <button class="cart_button">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#"
+              ><img class="product_image" src="images/gallery.jpeg" alt="photo"
+            /></a>
+            <a href="#"><p class="product_name">Lorem, ipsum dolor</p></a>
+            <p class="product_description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+              fuga voluptas totam dolorum, sequi deserunt repellat quia.
+            </p>
+
+            <div class="product_price">
+              <p>Price:</p>
+              <p class="cost">333</p>
+            </div>
+
+            <div class="product_cart">
+              <input
+                class="products_quantity"
+                type="number"
+                size="2"
+                name="num"
+                min="1"
+                max="10"
+                value="1"
+              />
+              <button class="cart_button">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#"
+              ><img class="product_image" src="images/gallery2.jpg" alt="photo"
+            /></a>
+            <a href="#"><p class="product_name">Lorem, ipsum dolor</p></a>
+            <p class="product_description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+              fuga voluptas totam dolorum, sequi deserunt repellat quia.
+            </p>
+
+            <div class="product_price">
+              <p>Price:</p>
+              <p class="cost">333</p>
+            </div>
+
+            <div class="product_cart">
+              <input
+                class="products_quantity"
+                type="number"
+                size="2"
+                name="num"
+                min="1"
+                max="10"
+                value="1"
+              />
+              <button class="cart_button">ADD TO CART</button>
+            </div>
+          </div> -->
+        </section>
+      </section>
+
+      <footer class="footer_box center">
+        <div class="footer_content">
+          <div class="footer_contact">
+            <p><i class="fas fa-house-user"></i> London, Dream str. 7/5</p>
+            <p><i class="fas fa-phone"></i> (045) 567 847 777</p>
+            <p><i class="fas fa-phone-square-alt"></i> (049499) 9889 888</p>
+            <p><i class="fas fa-copyright"></i> 2011-2021 Safe life</p>
+          </div>
+          <div class="footer_social">
+            <div>
+              <a href="#"><i class="fab fa-instagram-square"></i></a>
+            </div>
+            <div>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+            </div>
+            <div>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </div>
+            <div>
+              <a href="#"><i class="fab fa-pinterest-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/catalog.js"></script>
+  </body>
+</html>

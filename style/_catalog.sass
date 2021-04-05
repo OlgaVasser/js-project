@@ -1,0 +1,70 @@
+.catalog_box
+    margin-top: 50px
+    
+
+.catalog_header
+    color: $colorBasicLink
+    font-size: 40px
+    text-align: center
+
+.catalog_cards
+    margin-top: 30px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+
+.card
+    width: 300px
+    height: 100%
+    margin-bottom: 40px
+
+.product_image
+    max-width: 300px
+    max-height: 250px
+    margin-bottom: 5px
+
+.product_name
+    margin-bottom: 10px
+    +font(400, 18px)
+    color: #000
+    height: 70px
+
+.product_description
+    +font(200, 14px)
+    height: 200px
+    overflow-x: hidden
+    text-overflow: ellipsis
+    
+.product_price
+    margin-top: 15px
+    display: flex
+    text-align: right
+
+.cost
+    margin-left: 10px
+    color: $colorPrice
+
+.product_cart
+    display: flex
+    justify-content: space-between
+    padding-top: 15px
+
+.cart_button
+    margin-left: 20px
+    padding: 10px
+    min-width: 100px
+    border: none
+    border-radius: 5px
+    outline: none
+    background-color: #447275
+    color: $colorHoverLink
+    &:hover
+        background-color: $colorPrice
+        outline: none
+
+.products_quantity
+    text-align: center
+    border: none
+    border-radius: 5px
+    background-color: #DCDCDC
